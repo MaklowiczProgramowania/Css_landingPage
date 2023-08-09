@@ -1,0 +1,314 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header{
+    background-color: #000;
+    color: #fff;
+    padding: 0.625rem 0;
+    opacity: 0.9;
+    display: flex;
+}
+header h1{
+    margin: 0;
+    padding: 1.5rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: left;
+}
+header h1 a{
+    color: #fff;
+    text-decoration: none;
+}
+header nav{
+    margin: 0;
+    margin-right: 1.5rem;
+    padding: 0;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    user-select: none;
+}
+header nav ul li{
+    margin: 0;
+    padding: 1.5rem;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+header nav ul li a:hover{
+    color: #ddd;
+    text-decoration: underline;
+}
+header nav ul li a:active{
+    color: #aaa;
+}
+#mobile{
+    display: none;
+}
+
+/* Banner */
+.banner{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F525%2F034%2Foriginal%2Foffice-design-vector.jpg&f=1&nofb=1&ipt=e4b8cc5a5b1da7cb4745364acd439056b0c272ab35ada488140d0a69d6598a64&ipo=images");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.banner .content{
+    margin: auto;
+    padding: 0.4rem;
+    width: 50vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    height: auto;
+    border-radius: 1rem;
+}
+.banner .content h2{
+    margin: 1rem;
+    padding: 0;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+.banner .content h3{
+    margin: 1.5rem;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Products */
+.products{
+    background-color: #000;
+    padding: 1.5rem;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    border-bottom: 0.6rem dashed #fff;
+}
+.products h2{
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 2.4rem;
+    font-weight: 900;
+    text-align: center;
+}
+.products .container{
+    margin: auto;
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.products .container .item{
+    margin: 1rem;
+    padding: 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid #000;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.easytechjunkie.com%2Fprogramming-blue-screen.jpg&f=1&nofb=1&ipt=7387f43ba15ae01268cfc28f08e96b8c5f9baec4116f797a51b49663fb525441&ipo=images");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+}
+.products .container .item img{
+    margin: 0;
+    padding: 0;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+.products .container .item .about{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.products .container .item .about h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.products .container .item .about h4{
+    margin: 1rem 1.5rem;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Services */
+.services{
+    background-color: #000;
+    padding: 1.5rem;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    border-bottom: 0.6rem dashed #fff;
+}
+.services h2{
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 2.4rem;
+    font-weight: 900;
+    text-align: center;
+}
+.services .container{
+    margin: auto;
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.services .container .item{
+    margin: 1rem;
+    padding: 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid #000;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.unsplash.com%2Fphoto-1526657782461-9fe13402a841%3Fixlib%3Drb-1.2.1%26q%3D80%26fm%3Djpg%26crop%3Dentropy%26cs%3Dtinysrgb%26w%3D1080%26fit%3Dmax%26ixid%3DeyJhcHBfaWQiOjEyMDd9&f=1&nofb=1&ipt=1af60d36010ae1a7f3d1b6dd3fccaac8b13e9232b84d37da1b4b2aa4a61b63cb&ipo=images");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+}
+.services .container .item:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.services .container .item:active{
+    transform: scale(0.9);
+    transition: all 0.1s ease-in-out;
+}
+.services .container .item a{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.4rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+/* Contact */
+.contact{
+    background-color: #000;
+    padding: 1.5rem;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+.contact h2{
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 2.4rem;
+    font-weight: 900;
+    text-align: center;
+}
+.contact .container{
+    margin: auto;
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact .container .item{
+    margin: 1rem;
+    padding: 5rem;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid #fff;
+}
+.contact .container .item i{
+    margin: 0;
+    padding: 0;
+    font-size: 8rem;
+}
+.contact .container .item h3{
+    margin: 1rem 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    opacity: 0.9;
+}
+footer h4{
+    margin: 0 2rem;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 200;
+}
+#copy{
+    text-align: left;
+}
+#date{
+    text-align: right;
+}
